@@ -27,12 +27,13 @@ Ejemplos de uso:
 
 ## Tier pro ($0.02 USDC, x402)
 
-Veredicto profundo multi-fuente (precio/volumen KuCoin, sentimiento
-Fear&Greed, funding y open interest de futuros, ticks MT5 con spread real
-en forex/oro) con confianza 0-100 y track record verificado a 7 dias:
+Veredicto profundo multi-fuente (precio/volumen KuCoin triangulado con
+BingX, sentimiento Fear&Greed, funding y su tendencia, open interest, basis
+mark/indice, ticks MT5 con spread real en forex/oro) con confianza 0-100
+y track record verificado a 7 dias:
 
 ```
-GET https://veredicto.dpdns.org/comparar/pro   -> precio y metodos de pago
+GET https://veredicto.dpdns.org/comparar/pro   -> 402 con precio, metodos y extension Bazaar
 GET https://veredicto.dpdns.org/track          -> hits, total, hit_rate
 POST https://veredicto.dpdns.org/comparar/pro {"opciones":["btc","eth"]}
   Header: PAYMENT-SIGNATURE: <payload x402 en base64>
