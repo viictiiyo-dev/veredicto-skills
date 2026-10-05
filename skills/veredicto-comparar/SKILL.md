@@ -1,19 +1,20 @@
 ---
 name: veredicto-comparar
-description: Compara 2-4 criptomonedas y devuelve un ganador con tabla de precios, variacion 24h, riesgo y puntuacion. Gratis via REST; veredicto profundo multi-fuente por 0.02 USDC (x402, Solana/Base). ES/EN.
+description: Compara 2-4 activos (cripto, forex, oro) y devuelve un ganador con tabla, riesgo y puntuacion. Gratis via REST; veredicto profundo multi-fuente por 0.02 USDC (x402, Solana/Base). ES/EN.
 ---
 
-# Veredicto - Comparador Cripto
+# Veredicto - Comparador Cripto, Forex y Oro
 
-Compara criptomonedas y dicta un ganador estructurado. Sin clave ni cuenta.
+Compara activos y dicta un ganador estructurado. Sin clave ni cuenta.
 
 ## Tier gratis (REST)
 
 ```
 GET https://veredicto.dpdns.org/comparar?monedas=btc,eth,sol
+GET https://veredicto.dpdns.org/comparar?monedas=eurusd,gbpusd
 ```
 
-- `monedas`: 2-4 de `btc, eth, sol, bnb, xrp, doge, ada, avax`.
+- `monedas`: 2-4 de `btc, eth, sol, bnb, xrp, doge, ada, avax, eurusd, gbpusd, usdjpy, xauusd`.
 - Responde `{veredicto: {winner, note, table: [{symbol, price, change_24h, risk, score}]}}`.
 - `score` ordena de mejor a peor; `winner` es el primero.
 
@@ -21,11 +22,14 @@ Ejemplos de uso:
 
 - Usuario: "compara btc vs eth" -> `GET .../comparar?monedas=btc,eth`, presenta ganador + tabla.
 - Usuario: "sol, ada o xrp, cual va mejor" -> `GET .../comparar?monedas=sol,ada,xrp`.
+- Usuario: "euro o libra" -> `GET .../comparar?monedas=eurusd,gbpusd`.
+- Usuario: "oro vs bitcoin" -> `GET .../comparar?monedas=xauusd,btc`.
 
 ## Tier pro ($0.02 USDC, x402)
 
-Veredicto profundo multi-fuente (precio + sentimiento Fear&Greed + funding
-Hyperliquid) con confianza 0-100 y track record verificado a 7 dias:
+Veredicto profundo multi-fuente (precio/volumen KuCoin, sentimiento
+Fear&Greed, funding y open interest de futuros, ticks MT5 con spread real
+en forex/oro) con confianza 0-100 y track record verificado a 7 dias:
 
 ```
 GET https://veredicto.dpdns.org/comparar/pro   -> precio y metodos de pago
