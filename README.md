@@ -23,3 +23,12 @@ skills/veredicto-comparar/SKILL.md
 ```
 
 Servicio vivo: https://veredicto.dpdns.org
+
+## Servidor MCP
+
+```bash
+pip install mcp
+claude mcp add veredicto --transport stdio -- python mcp/mcp_server.py
+```
+
+Herramientas: `comparar`, `veredicto_pro_info`.
