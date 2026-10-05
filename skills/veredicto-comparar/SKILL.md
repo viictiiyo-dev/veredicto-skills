@@ -42,6 +42,8 @@ POST https://veredicto.dpdns.org/comparar/pro {"opciones":["btc","eth"]}
 
 Sin firma responde 402 con el reto en el header `PAYMENT-REQUIRED`.
 Redes: Solana y Base, esquema `exact`, 20000 unidades (0.02 USDC).
+Tier plus ($0.05): `POST .../comparar/pro-plus` — anade soportes,
+resistencias Donchian 20d y volatilidad diaria por activo.
 Destinos: Solana `9F2PzCVPZ7V7WATG732WH4sf31gSXiHKyx3UmdSDvFQo`,
 Base `0x139a680FCa575cfA5ADA25b5417fe9fDeE8ED06E`.
 
