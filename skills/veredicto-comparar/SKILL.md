@@ -29,8 +29,8 @@ Ejemplos de uso:
 
 Veredicto profundo multi-fuente (precio/volumen KuCoin triangulado con
 BingX, sentimiento Fear&Greed, funding y su tendencia, open interest, basis
-mark/indice, ticks MT5 con spread real en forex/oro) con confianza 0-100
-y track record verificado a 7 dias:
+mark/indice, flujo DEX onchain, ticks MT5 con spread real en forex/oro)
+con confianza 0-100 y track record verificado a 7 dias:
 
 ```
 GET https://veredicto.dpdns.org/comparar/pro   -> 402 con precio, metodos y extension Bazaar
