@@ -1,8 +1,9 @@
 # veredicto-skills
 
-Agent skill: compara 2-4 criptomonedas y devuelve un ganador estructurado
-(tabla, puntuacion, riesgo). ES/EN. Gratis via REST; veredicto profundo
-multi-fuente por 0.02 USDC (x402, Solana/Base).
+Agent skill: compara 2-4 activos (cripto, forex, oro) y dicta un veredicto
+estructurado (tabla, puntuacion, riesgo). ES/EN. Gratis via REST; veredicto
+profundo multi-fuente (KuCoin + Fear&Greed + funding/OI + MT5) por 0.02 USDC
+(x402, Solana/Base), con track record verificado.
 
 ## Instalacion
 
