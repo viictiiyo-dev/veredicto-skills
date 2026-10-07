@@ -35,7 +35,7 @@ y track record verificado a 7 dias:
 
 ```
 GET https://veredicto.dpdns.org/comparar/pro   -> 402 con precio, metodos y extension Bazaar
-GET https://veredicto.dpdns.org/track          -> hits, total, hit_rate
+GET https://veredicto.dpdns.org/track          -> flash_24h + semanal_7d (hits, hit_rate)
 POST https://veredicto.dpdns.org/comparar/pro {"opciones":["btc","eth"]}
   Header: PAYMENT-SIGNATURE: <payload x402 en base64>
 ```
